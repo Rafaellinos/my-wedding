@@ -21,7 +21,7 @@ const FooterComponent = () => {
                             </div>
 
                             <div className="col-lg-4 col-md-6 mb-4 mb-md-0 text-center">
-                                <h3>Informações do evento</h3>
+                                <h3>Informações do Evento</h3>
                                 <ul className="list-group list-group-flush">
                                     <li className="list-group-item">Av. Água Fria, 1608 - 02332-001</li>
                                     <li className="list-group-item">Outubro - 21/10/2023</li>
