@@ -7,7 +7,7 @@ const FooterComponent = () => {
         <Fragment>
             <div className="container mt-5">
 
-                <footer className="text-black text-center text-lg-start bg-white">
+                <footer className="text-black text-center text-lg-start bg-white transparent-opacity">
 
                     <div className="container p-4">
 
