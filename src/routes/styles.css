@@ -101,6 +101,11 @@ nav a:hover {
     grid-template-columns: 1fr;
 }
 
+.form-confirmar-presenca {
+  width: 100%;
+  max-width: 350px;
+}
+
 
 @media all and (max-width: 768px) {
   #countdown h1 {
