@@ -1,5 +1,4 @@
 import {Link, Outlet, useLocation} from "react-router-dom";
-import {Fragment} from "react";
 import {Container, Nav, Navbar} from "react-bootstrap";
 import FooterComponent from "./footer.component";
 
@@ -8,8 +7,8 @@ const Header = () => {
     const location = useLocation();
 
     return (
-        <Fragment>
-            <Container className="bg-white">
+        <div className="bg-flower">
+            <Container className="bg-white transparent-opacity">
                 <h1 className="main-header">Yasmin & Rafael</h1>
                 <Navbar bg="light" expand="lg" className="justify-content-center">
                     <Container>
@@ -33,7 +32,7 @@ const Header = () => {
             </Container>
             <Outlet/>
             <FooterComponent/>
-        </Fragment>
+        </div>
 
     );
 }
