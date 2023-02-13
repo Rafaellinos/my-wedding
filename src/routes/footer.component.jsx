@@ -29,7 +29,7 @@ const FooterComponent = () => {
                                 </ul>
                             </div>
 
-                            <div className="col-lg-4 col-md-6 mb-4 mb-md-0">
+                            <div className="col-lg-4 col-md-6 mb-4 mb-md-0" id="local-festa">
                                 <Container>
                                     <footer className={"text-center text-xl-center bg-white footer"}>
                                         <iframe
@@ -57,7 +57,7 @@ const FooterComponent = () => {
 
                     <div className="text-center p-3" style={{backgroundColor: 'rgba(240, 240, 240)'}}>
                         © 2023 Copyright:
-                        <a className="text-black" href="/home">yasminrafael.com.br</a>
+                        <span className="text-black">yasminrafael.com.br</span>
                     </div>
 
                 </footer>
