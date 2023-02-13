@@ -11,13 +11,14 @@ const Header = () => {
             <Container className="bg-white transparent-opacity">
                 <h1 className="main-header">Yasmin & Rafael</h1>
                 <Container className="text-uppercase">
-                    <Navbar>
+                    <Navbar expand="sm">
                         <Container className="font-lato">
+                            {/*<Navbar.Brand href="#home">React-Bootstrap</Navbar.Brand>*/}
                             <Navbar.Toggle aria-controls="basic-navbar-nav" />
                             <Navbar.Collapse id="basic-navbar-nav" className="justify-content-center">
-                                <Nav className="">
+                                <Nav>
                                     <Nav.Link href="/" className={location.pathname === "/" ? "active-menu": ""}>Início</Nav.Link>
-                                    <Nav.Link href="#sobre-nos">Sobre Nós</Nav.Link>
+                                    <Nav.Link href="/sobre-nos">Sobre Nós</Nav.Link>
                                     <Nav.Link href="#local-festa">Local da festa</Nav.Link>
                                     <Nav.Link href="/#contagem-regressiga">Contagem Regressiva</Nav.Link>
                                     <Nav.Link href="mailto:rafael.veloso.lino@hotmail.com?subject=Confirmção de Presença">Confirmar Presença</Nav.Link>

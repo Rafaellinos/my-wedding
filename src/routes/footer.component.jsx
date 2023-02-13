@@ -6,20 +6,15 @@ const FooterComponent = () => {
     return (
         <Fragment>
             <div className="container mt-5">
-
                 <footer className="text-black text-center text-lg-start bg-white transparent-opacity">
-
                     <div className="container p-4">
-
                         <div className="row mt-4">
                             <div className="col-lg-4 col-md-12 mb-4 mb-md-0">
                                 <h5 className="text-uppercase mb-4">Sobre o Casal</h5>
-
                                 <p>
                                     Yasmin e Rafael se conheceram em 10/12/2017, e desde então não se separaram mais.
                                 </p>
                             </div>
-
                             <div className="col-lg-4 col-md-6 mb-4 mb-md-0 text-center">
                                 <h3>Informações do Evento</h3>
                                 <ul className="list-group list-group-flush">
@@ -28,7 +23,6 @@ const FooterComponent = () => {
                                     <li className="list-group-item">18:00 às 21:00</li>
                                 </ul>
                             </div>
-
                             <div className="col-lg-4 col-md-6 mb-4 mb-md-0" id="local-festa">
                                 <Container>
                                     <footer className={"text-center text-xl-center bg-white footer"}>
@@ -50,18 +44,13 @@ const FooterComponent = () => {
                                 {/*    </tbody>*/}
                                 {/*</table>*/}
                             </div>
-
                         </div>
-
                     </div>
-
                     <div className="text-center p-3" style={{backgroundColor: 'rgba(240, 240, 240)'}}>
                         © 2023 Copyright:
                         <span className="text-black">yasminrafael.com.br</span>
                     </div>
-
                 </footer>
-
             </div>
         </Fragment>
     )
