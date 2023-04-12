@@ -21,7 +21,7 @@ const Header = () => {
                                     <Nav.Link href="/sobre-nos">Sobre Nós</Nav.Link>
                                     <Nav.Link href="#local-festa">Local da festa</Nav.Link>
                                     <Nav.Link href="/#contagem-regressiga">Contagem Regressiva</Nav.Link>
-                                    <Nav.Link href="mailto:rafael.veloso.lino@hotmail.com?subject=Confirmção de Presença">Confirmar Presença</Nav.Link>
+                                    <Nav.Link href="/confirmar-presenca">Confirmar Presença</Nav.Link>
                                     <Nav.Link href="/manual-convidados">Manual do Convidado</Nav.Link>
                                     <Nav.Link href="/lista-presentes">Lista de Presentes</Nav.Link>
                                 </Nav>
