@@ -1,21 +1,15 @@
 import {Container, Image} from "react-bootstrap";
 import './styles.css';
-import MainWeddingPic from '../assets/casamento.png';
+import MainCollage from '../assets/love_collage02.png';
 import CountComponent from "../components/count.component";
 
 const Home = () => {
     return (
         <Container>
             <Container>
-                <div className={"text-center my-5"}>
-                    <p className="text-uppercase">
-                        Vamos nos Casar!
-                    </p>
-                    <p>
-                        <strong>21 de Outubro de 2023</strong>
-                    </p>
+                <div className={"text-center m-2"}>
                     <Image
-                        src={MainWeddingPic}
+                        src={MainCollage}
                         alt={"Yasmin and Rafael picture"}
                         className={"img-fluid rounded"}
                     />

@@ -6,11 +6,15 @@ const ManualConvidadoComponent = () => {
     return (
         <Fragment>
             <Container className="">
-                <h2>Dress Code</h2>
-                <ul>
-                    <li>Azul e branco, de preferência</li>
-                    <li>Branco é exclusivo da noiva</li>
-                </ul>
+                <h2 className="text-uppercase">Dress Code</h2>
+                <section>
+                    <Container className="m-2 rules-section">
+                        <ul className="text-center list-unstyled">
+                            <li>Azul e branco, de preferência</li>
+                            <li>Branco é exclusivo da noiva</li>
+                        </ul>
+                    </Container>
+                </section>
                 <h2 className="text-uppercase">Na Cerimônia</h2>
                 <section>
                     <Container className="m-2 rules-section">

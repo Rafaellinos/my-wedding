@@ -3,12 +3,13 @@
 }
 
 .main-header {
-  min-height: 15vh;
+  min-height: 10vh;
+  min-width: 10vw;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(25px + 2vmin);
+  font-size: calc(20px + 2vmin) !important;
   color: black;
   font-family: 'Sacramento', cursive;
 }
@@ -31,8 +32,9 @@
 
 .bg-flower {
   text-align: center;
-  background-image: url("../assets/blue_backgroud.png");
+  background-image: linear-gradient(rgba(255,255,255,0.3), rgba(255,255,255,0.3)), url("../assets/blue_backgroud.png");
   background-size: cover;
+  /*opacity: 100.0%;*/
 }
 
 .bg-white.transparent-opacity {
@@ -61,7 +63,7 @@
 }
 
 nav a:link, nav a:visited, nav a:active {
-  /*color: blue;*/
+  font-weight: bold;
 }
 
 nav a:hover {
@@ -119,4 +121,13 @@ nav a:hover {
   #countdown li span {
     font-size: calc(3.155rem * var(--smaller));
   }
+}
+
+.bg-serenity {
+  background-image: linear-gradient(180deg, #B3CEE5, #79a6ca);
+  opacity: 90%;
+}
+
+.border-red {
+  border-color: red !important;
 }

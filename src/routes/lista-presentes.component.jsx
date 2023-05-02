@@ -33,7 +33,7 @@ const ListaPresentesComponent = () => {
                         image={Furniture}
                         extraBody={
                             <>
-                                <h5>Objetivo: 5.000,00</h5>
+                                <h5>Objetivo: R$ 5.000,00</h5>
                                 <ProgressBar now={now} label={`${now}%`} className="m-3" />
                                 <Button variant="primary" onClick={handleShow}>PIX</Button>
                             </>
@@ -45,7 +45,7 @@ const ListaPresentesComponent = () => {
                         image={HoneyMoon}
                         extraBody={
                             <>
-                                <h5>Objetivo: 5.000,00</h5>
+                                <h5>Objetivo: R$ 5.000,00</h5>
                                 <ProgressBar now={now} label={`${now}%`} className="m-3" />
                                 <Button variant="primary" onClick={handleShow}>PIX</Button>
                             </>
