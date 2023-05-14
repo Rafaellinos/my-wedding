@@ -4,31 +4,34 @@ import FooterComponent from "./footer.component";
 
 const Header = () => {
 
-    // const location = useLocation();
-
     return (
         <div className="bg-flower">
-            <Container className="rounded transparent-opacity bg-serenity">
-                <Container>
+            <div className="navbar-expand-lg rounded transparent-opacity bg-serenity">
                     <Navbar expand="sm">
                         <Container className="font-lato">
-                            <Navbar.Brand href="/" className="main-header">Yasmin & Rafael</Navbar.Brand>
+                            <Navbar.Brand href="/" className="main-header">
+                                <span className="bg-header-color">Yasmin & Rafael</span>
+                            </Navbar.Brand>
                             <Navbar.Toggle aria-controls="basic-navbar-nav" />
                             <Navbar.Collapse id="basic-navbar-nav" className="justify-content-center">
                                 <Nav className="text-uppercase">
-                                    {/*<Nav.Link href="/" className={location.pathname === "/" ? "active": ""}>Início</Nav.Link>*/}
-                                    {/*<Nav.Link href="/sobre-nos">Sobre Nós</Nav.Link>*/}
-                                    <Nav.Link href="#local-festa">Local da festa</Nav.Link>
-                                    {/*<Nav.Link href="/#contagem-regressiga">Contagem Regressiva</Nav.Link>*/}
-                                    <Nav.Link href="/confirmar-presenca">Confirmar Presença</Nav.Link>
-                                    <Nav.Link href="/manual-convidados">Manual do Convidado</Nav.Link>
-                                    <Nav.Link href="/lista-presentes">Lista de Presentes</Nav.Link>
+                                    <Nav.Link href="#local-festa">
+                                        <span className="bg-header-color menu-items">Local da Festa</span>
+                                    </Nav.Link>
+                                    <Nav.Link href="/confirmar-presenca">
+                                        <span className="bg-header-color menu-items">Confirmar Presença</span>
+                                    </Nav.Link>
+                                    <Nav.Link href="/manual-convidados">
+                                        <span className="bg-header-color menu-items">Manual do Convidado</span>
+                                    </Nav.Link>
+                                    <Nav.Link href="/lista-presentes">
+                                        <span className="bg-header-color menu-items">Lista de Presentes</span>
+                                    </Nav.Link>
                                 </Nav>
                             </Navbar.Collapse>
                         </Container>
                     </Navbar>
-                </Container>
-            </Container>
+            </div>
             <Outlet/>
             <FooterComponent/>
         </div>
