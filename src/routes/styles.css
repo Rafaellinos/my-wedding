@@ -38,13 +38,6 @@
   font-size: 4.5rem;
 }
 
-.bg-flower {
-  text-align: center;
-  background-image: linear-gradient(rgba(255,255,255,0.3), rgba(255,255,255,0.3)), url("../assets/blue_backgroud.png");
-  background-size: cover;
-  /*opacity: 100.0%;*/
-}
-
 .bg-white.transparent-opacity {
   --bs-bg-opacity: 0.5;
 }
@@ -107,7 +100,6 @@ nav a:hover {
 }
 
 #contagem-regressiga {
-    color: black;
     display: grid;
     grid-template-columns: 1fr;
 }
@@ -117,6 +109,12 @@ nav a:hover {
   max-width: 350px;
 }
 
+@media all and (min-width: 1200px) {
+  .fit-invitation {
+    max-width: 40% !important;
+    max-height: 40% !important;
+  }
+}
 
 @media all and (max-width: 768px) {
   #countdown h1 {

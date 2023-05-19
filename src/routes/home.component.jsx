@@ -10,7 +10,7 @@ const Home = () => {
                 <div className={"text-center m-2"}>
                     <div className="m-3 main-title">
                         <h2 style={{fontWeight: "bold"}}>VAMOS NOS CASAR</h2>
-                        <span>21.10.23 </span>
+                        <span>21.10.23</span>
                     </div>
                     <Image
                         src={MainCollage}
