@@ -13,7 +13,7 @@ const ListaPresentesComponent = () => {
 
     const handleClose = () => setModalHandler(false);
     const handleShow = () => setModalHandler(true);
-    const now = 1;
+    const now = 20;
 
     return (
         <Container>

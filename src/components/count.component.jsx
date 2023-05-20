@@ -9,7 +9,7 @@ const CountComponent = () => {
     const [days, setDays] = useState(0);
 
     useEffect(() => {
-        const theDay = new Date("2023-10-21T18:00:00");
+        const theDay = new Date("2023-10-21T18:30:00");
         const interval = setInterval(() => {
             const today = new Date();
             const diff = theDay - today;
@@ -28,9 +28,9 @@ const CountComponent = () => {
 
     return (
         <Fragment>
-            <Container className="my-5 main-title" id="contagem-regressiga">
+            <Container className="my-2 main-title" id="contagem-regressiga">
                 <div className="text-center my-3">
-                    <h1 className={"text-black"}>Contagem Regressiva</h1>
+                    {/*<h1 className={"text-black"}>Contagem Regressiva</h1>*/}
                     <div id="countdown">
                         <ul>
                             <li><span id="days">{days}</span><div className={"text-black"}>Dias</div></li>

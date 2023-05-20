@@ -109,14 +109,39 @@ nav a:hover {
   max-width: 350px;
 }
 
+.main-location-info img {
+  height: 350px;
+  width: 450px;
+}
+
+.main-location-info iframe {
+  height: 350px;
+  width: 450px;
+}
+
+.collage-main-page {
+  max-height: 450px;
+}
+
 @media all and (min-width: 1200px) {
   .fit-invitation {
-    max-width: 40% !important;
-    max-height: 40% !important;
+    max-width: 60% !important;
+    max-height: 60% !important;
   }
 }
 
 @media all and (max-width: 768px) {
+  .main-location-info iframe {
+    height: 200px;
+    width: 250px;
+  }
+  .main-location-info img {
+    height: 200px;
+    width: 250px;
+  }
+  .collage-main-page {
+    max-width: 100%;
+  }
   #countdown h1 {
     font-size: calc(1.5rem * var(--smaller));
   }

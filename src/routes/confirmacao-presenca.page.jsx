@@ -63,10 +63,11 @@ const ConfirmacaoPresencaPage = () => {
                 }
                 show={modalHandler}
             />
-            <div className="form-confirmar-presenca my-3">
+            <div className="form-confirmar-presenca my-3 main-title text-center text-uppercase">
                 <Alert key='danger' variant='danger' className={showAlert}>
                     {alertMessage}
                 </Alert>
+                <h3 className={"my-2"}>confirmação de presença</h3>
                 <Form onSubmit={handleSubmit}>
                     <Form.Group className="my-2">
                         <Form.Label>Nome Completo</Form.Label>

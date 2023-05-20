@@ -8,10 +8,10 @@ const FooterComponent = () => {
                 bottom: 0, position: "fixed",
                 left: 0, width: "100%"
             }}>
-                <footer className="text-black text-center text-lg-start bg-serenity transparent-opacity">
+                <footer className="text-white text-center text-lg-start bg-serenity transparent-opacity">
                     <div className="text-center p-3">
                         © 2023 Copyright:
-                        <span className="text-black">yasmin.rafaellino.com.br</span>
+                        <span className="text-white">yasmin.rafaellino.com.br</span>
                     </div>
                 </footer>
             </footer>

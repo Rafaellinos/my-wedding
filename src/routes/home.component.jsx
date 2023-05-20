@@ -15,7 +15,7 @@ const Home = () => {
                     <Image
                         src={MainCollage}
                         alt={"Yasmin and Rafael picture"}
-                        className={"img-fluid rounded"}
+                        className={"img-fluid rounded collage-main-page"}
                     />
                     <CountComponent/>
                 </div>
