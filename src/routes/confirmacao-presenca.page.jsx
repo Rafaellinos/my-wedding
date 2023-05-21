@@ -2,6 +2,7 @@ import {Alert, Button, Container, Form} from "react-bootstrap";
 import InputMask from 'react-input-mask';
 import React, {useState} from "react";
 import GenericModalComponent from "../components/generic-modal.component";
+import LoadingComponent from "../components/loading-component";
 
 const ConfirmacaoPresencaPage = () => {
 
@@ -13,6 +14,7 @@ const ConfirmacaoPresencaPage = () => {
         quantity_adults: 0,
         quantity_children: 0,
     }
+    let [loading, setLoading] = useState(false);
 
     const [formState, setFormState] = useState(formInitialState);
     const [showAlert, setShowAlert] = useState('d-none');
@@ -31,6 +33,7 @@ const ConfirmacaoPresencaPage = () => {
         setShowAlert('d-none');
         event.preventDefault();
         console.log(formState);
+        setLoading(true);
         try {
             let res = await fetch(process.env.REACT_APP_FORM_URL || '/', {
                 method: 'POST',
@@ -38,15 +41,19 @@ const ConfirmacaoPresencaPage = () => {
             });
             await res.json();
             if (res.status === 200) {
+                setLoading(false);
                 setFormState(formInitialState);
                 console.log("Formulário enviado com sucesso!");
                 handleShow();
             } else {
+                setLoading(false);
                 console.error(res);
                 setShowAlert('d-block');
                 setAlertMessage('Erro ao enviar formulário! Tente novamente mais tarde.');
             }
+
         } catch (error) {
+            setLoading(false);
             console.log(error);
             setShowAlert('d-block');
             setAlertMessage('Erro ao enviar formulário! Tente novamente mais tarde.');
@@ -55,6 +62,7 @@ const ConfirmacaoPresencaPage = () => {
 
     return (
         <Container className="d-flex justify-content-center">
+            <LoadingComponent loading={loading}/>
             <GenericModalComponent
                 title="Confirmação de Presença"
                 onClose={handleClose}
@@ -138,7 +146,6 @@ const ConfirmacaoPresencaPage = () => {
                     </Button>
                 </Form>
             </div>
-
         </Container>
     )
 }
