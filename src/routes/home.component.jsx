@@ -1,6 +1,6 @@
 import {Container, Image} from "react-bootstrap";
 import './styles.css';
-import MainCollage from '../assets/love_collage02.png';
+import MainCollage from '../assets/collage_we.png';
 import CountComponent from "../components/count.component";
 
 const Home = () => {
