@@ -6,6 +6,7 @@ import ConfirmacaoPresencaPage from "./routes/confirmacao-presenca.page";
 import Invitation from "./routes/invitation.page";
 import LocationComponent from "./routes/location.component.jsx";
 import WrapperComponent from "./routes/wrapper.component";
+import InvitationNormal from "./routes/invitation-normal.page";
 
 const App = () => {
     return (
@@ -18,6 +19,7 @@ const App = () => {
                 <Route path="/confirmar-presenca" element={<ConfirmacaoPresencaPage/>}/>
                 <Route path="/invite" element={<Invitation/>}/>
             </Route>
+            <Route path="/virtual-invite" element={<InvitationNormal/>}/>
         </Routes>
     );
 }

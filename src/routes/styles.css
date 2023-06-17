@@ -162,6 +162,6 @@ nav a:hover {
 }
 
 .main-title {
-  color: var(--color-serenety-secondary);
+  color: var(--color-serenety-primary);
   font-family: 'Roboto Condensed', Roboto, sans-serif;
 }
