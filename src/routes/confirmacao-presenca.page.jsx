@@ -12,7 +12,9 @@ const ConfirmacaoPresencaPage = () => {
         guests: '',
         email: '',
         quantity_adults: 0,
-        quantity_children: 0,
+        children_not_paying: 0,
+        children_pay_half: 0,
+        children_pay_full: 0
     }
     let [loading, setLoading] = useState(false);
 
@@ -98,17 +100,43 @@ const ConfirmacaoPresencaPage = () => {
                             max={10}
                         />
                     </Form.Group>
+
                     <Form.Group className="my-2">
-                        <Form.Label>Quantidade de Crianças</Form.Label>
+                        <Form.Label>Quantidade Crianças (Maior 11 anos)</Form.Label>
                         <Form.Control
                             type="number"
                             placeholder="0"
-                            value={formState.quantity_children}
-                            onChange={(event) => handleFormChange(event, 'quantity_children')}
+                            value={formState.children_pay_full}
+                            onChange={(event) => handleFormChange(event, 'children_pay_full')}
                             min={0}
                             max={10}
                         />
                     </Form.Group>
+
+                    <Form.Group className="my-2">
+                        <Form.Label>Quantidade Crianças (A partir 6 anos)</Form.Label>
+                        <Form.Control
+                            type="number"
+                            placeholder="0"
+                            value={formState.children_pay_half}
+                            onChange={(event) => handleFormChange(event, 'children_pay_half')}
+                            min={0}
+                            max={10}
+                        />
+                    </Form.Group>
+
+                    <Form.Group className="my-2">
+                        <Form.Label>Quantidade Crianças (Menor de 6 anos)</Form.Label>
+                        <Form.Control
+                            type="number"
+                            placeholder="0"
+                            value={formState.children_not_paying}
+                            onChange={(event) => handleFormChange(event, 'children_not_paying')}
+                            min={0}
+                            max={10}
+                        />
+                    </Form.Group>
+
                     <Form.Group className="my-2">
                         <Form.Label>Email</Form.Label>
                         <Form.Control

@@ -33,10 +33,10 @@ const CountComponent = () => {
                     {/*<h1 className={"text-black"}>Contagem Regressiva</h1>*/}
                     <div id="countdown">
                         <ul>
-                            <li><span id="days">{days}</span><div className={"text-black"}>Dias</div></li>
-                            <li><span id="hours">{hours}</span><div className={"text-black"}>Horas</div></li>
-                            <li><span id="minutes">{minutes}</span><div className={"text-black"}>Minutos</div></li>
-                            <li><span id="seconds">{seconds}</span><div className={"text-black"}>Segundos</div></li>
+                            <li><span id="days">{days}</span><div>Dias</div></li>
+                            <li><span id="hours">{hours}</span><div>Horas</div></li>
+                            <li><span id="minutes">{minutes}</span><div>Minutos</div></li>
+                            <li><span id="seconds">{seconds}</span><div>Segundos</div></li>
                         </ul>
                     </div>
                 </div>

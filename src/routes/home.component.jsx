@@ -18,7 +18,7 @@ const Home = () => {
                         className={"m-1 img-fluid rounded collage-main-page"}
                     />
                     <div className="mt-3 main-title">
-                        <h3 style={{fontWeight: "bold"}}>Faltam ...</h3>
+                        <h3 style={{fontWeight: "bold"}}>Faltam...</h3>
                     </div>
                     <CountComponent/>
                 </div>

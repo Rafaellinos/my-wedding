@@ -17,15 +17,15 @@ const Header = () => {
                                 <Nav.Link href="/localizacao">
                                     <span className="bg-header-color menu-items">Local da Festa</span>
                                 </Nav.Link>
-                                {/*<Nav.Link href="/confirmar-presenca">*/}
-                                {/*    <span className="bg-header-color menu-items">Confirmar Presença</span>*/}
-                                {/*</Nav.Link>*/}
+                                <Nav.Link href="/confirmar-presenca">
+                                    <span className="bg-header-color menu-items">Confirmar Presença</span>
+                                </Nav.Link>
                                 {/*<Nav.Link href="/manual-convidados">*/}
                                 {/*    <span className="bg-header-color menu-items">Manual do Convidado</span>*/}
                                 {/*</Nav.Link>*/}
-                                {/*<Nav.Link href="/lista-presentes">*/}
-                                {/*    <span className="bg-header-color menu-items">Lista de Presentes</span>*/}
-                                {/*</Nav.Link>*/}
+                                <Nav.Link href="/lista-presentes">
+                                    <span className="bg-header-color menu-items">Lista de Presentes</span>
+                                </Nav.Link>
                             </Nav>
                         </Navbar.Collapse>
                     </Container>
