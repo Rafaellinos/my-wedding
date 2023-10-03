@@ -13,7 +13,10 @@ const ListaPresentesComponent = () => {
 
     const handleClose = () => setModalHandler(false);
     const handleShow = () => setModalHandler(true);
-    const now = 1;
+    const moneyObjective = 5000;
+    let honeyMoonTotal = 0;
+    let houseTotal = 3000;
+    const ruleOfThree = (current) => ((current*1.0)/moneyObjective)*100;
 
     return (
         <Container>
@@ -34,7 +37,7 @@ const ListaPresentesComponent = () => {
                         extraBody={
                             <>
                                 <h5>Objetivo: R$ 5.000,00</h5>
-                                <ProgressBar now={now} label={`${now}%`} className="m-3" />
+                                <ProgressBar now={ruleOfThree(houseTotal)} label={`${ruleOfThree(houseTotal)}%`} className="m-3" />
                                 <Button variant="primary" onClick={handleShow}>PIX</Button>
                             </>
                         }
@@ -46,7 +49,7 @@ const ListaPresentesComponent = () => {
                         extraBody={
                             <>
                                 <h5>Objetivo: R$ 5.000,00</h5>
-                                <ProgressBar now={now} label={`${now}%`} className="m-3" />
+                                <ProgressBar now={ruleOfThree(honeyMoonTotal)} label={`${ruleOfThree(honeyMoonTotal)}%`} className="m-3" />
                                 <Button variant="primary" onClick={handleShow}>PIX</Button>
                             </>
                         }

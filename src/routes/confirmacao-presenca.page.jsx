@@ -73,7 +73,7 @@ const ConfirmacaoPresencaPage = () => {
                 }
                 show={modalHandler}
             />
-            <div className="form-confirmar-presenca my-3 main-title text-center text-uppercase">
+            <div className="form-confirmar-presenca mt-2 mb-5 main-title text-center text-uppercase">
                 <Alert key='danger' variant='danger' className={showAlert}>
                     {alertMessage}
                 </Alert>
@@ -169,9 +169,11 @@ const ConfirmacaoPresencaPage = () => {
                             onChange={(event) => handleFormChange(event, 'guests')}
                         />
                     </Form.Group>
-                    <Button variant="primary" type="submit" className="mt-2">
-                        Confirmar Presença
-                    </Button>
+                    <Form.Group>
+                        <Button variant="primary" type="submit" className="mt-2 mb-5">
+                            Confirmar Presença
+                        </Button>
+                    </Form.Group>
                 </Form>
             </div>
         </Container>
