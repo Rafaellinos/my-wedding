@@ -32,7 +32,7 @@ const ListaPresentesComponent = () => {
                 <div className="row align-items-center">
                     <CardComponent
                         title="Casa"
-                        text="Ajuste os noivas a mobiliar a casa nova!"
+                        text="Ajude os noivos a mobiliar a casa nova!"
                         image={Furniture}
                         extraBody={
                             <>
