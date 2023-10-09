@@ -15,7 +15,7 @@ const ListaPresentesComponent = () => {
     const handleShow = () => setModalHandler(true);
     const moneyObjective = 5000;
     let honeyMoonTotal = 0;
-    let houseTotal = 3000;
+    let houseTotal = 4200;
     const ruleOfThree = (current) => ((current*1.0)/moneyObjective)*100;
 
     return (
