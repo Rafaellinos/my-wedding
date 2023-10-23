@@ -12,7 +12,7 @@ const CountComponent = () => {
         const theDay = new Date("2023-10-21T18:30:00");
         const interval = setInterval(() => {
             const today = new Date();
-            const diff = theDay - today;
+            const diff = Math.abs(theDay - today);
             const days = Math.floor(diff / 1000 / 60 / 60 / 24);
             const hours = Math.floor(diff / 1000 / 60 / 60) % 24;
             const minutes = Math.floor(diff / 1000 / 60) % 60;
